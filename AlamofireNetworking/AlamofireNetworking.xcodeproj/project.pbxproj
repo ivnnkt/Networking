@@ -10,10 +10,14 @@
 		66EA7487BA55B783247E522A /* libPods-AlamofireNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C925A3F45CD8D0AE7379AC /* libPods-AlamofireNetworking.a */; };
 		FA23301F28C1003F00B86424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23301E28C1003F00B86424 /* AppDelegate.swift */; };
 		FA23302128C1003F00B86424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23302028C1003F00B86424 /* SceneDelegate.swift */; };
-		FA23302328C1003F00B86424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23302228C1003F00B86424 /* ViewController.swift */; };
+		FA23302328C1003F00B86424 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23302228C1003F00B86424 /* PostsViewController.swift */; };
 		FA23302628C1003F00B86424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23302428C1003F00B86424 /* Main.storyboard */; };
 		FA23302828C1004200B86424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA23302728C1004200B86424 /* Assets.xcassets */; };
 		FA23302B28C1004200B86424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23302928C1004200B86424 /* LaunchScreen.storyboard */; };
+		FA23303628C1040000B86424 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23303528C1040000B86424 /* NetworkManager.swift */; };
+		FA23303828C1299600B86424 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23303728C1299500B86424 /* Post.swift */; };
+		FA23303B28C1577A00B86424 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23303928C1577A00B86424 /* PostTableViewCell.swift */; };
+		FA23303C28C1577A00B86424 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA23303A28C1577A00B86424 /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +27,15 @@
 		FA23301B28C1003F00B86424 /* AlamofireNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA23301E28C1003F00B86424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA23302028C1003F00B86424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA23302228C1003F00B86424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA23302228C1003F00B86424 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		FA23302528C1003F00B86424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA23302728C1004200B86424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA23302A28C1004200B86424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA23302C28C1004200B86424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA23303528C1040000B86424 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = AlamofireNetworking/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		FA23303728C1299500B86424 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FA23303928C1577A00B86424 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FA23303A28C1577A00B86424 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,6 @@
 				ACA160A1214B4D2CC7DA4D18 /* Pods-AlamofireNetworking.debug.xcconfig */,
 				CCA7EBD0D0E7F84C4DBC29B1 /* Pods-AlamofireNetworking.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +88,43 @@
 		FA23301D28C1003F00B86424 /* AlamofireNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				FA23303428C103D100B86424 /* View */,
+				FA23303328C103C100B86424 /* Model */,
+				FA23303228C103A500B86424 /* Controller */,
+				FA23303528C1040000B86424 /* NetworkManager.swift */,
 				FA23301E28C1003F00B86424 /* AppDelegate.swift */,
 				FA23302028C1003F00B86424 /* SceneDelegate.swift */,
-				FA23302228C1003F00B86424 /* ViewController.swift */,
 				FA23302428C1003F00B86424 /* Main.storyboard */,
 				FA23302728C1004200B86424 /* Assets.xcassets */,
 				FA23302928C1004200B86424 /* LaunchScreen.storyboard */,
 				FA23302C28C1004200B86424 /* Info.plist */,
 			);
 			path = AlamofireNetworking;
+			sourceTree = "<group>";
+		};
+		FA23303228C103A500B86424 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA23302228C1003F00B86424 /* PostsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA23303328C103C100B86424 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA23303728C1299500B86424 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA23303428C103D100B86424 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA23303928C1577A00B86424 /* PostTableViewCell.swift */,
+				FA23303A28C1577A00B86424 /* PostTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +189,7 @@
 				FA23302B28C1004200B86424 /* LaunchScreen.storyboard in Resources */,
 				FA23302828C1004200B86424 /* Assets.xcassets in Resources */,
 				FA23302628C1003F00B86424 /* Main.storyboard in Resources */,
+				FA23303C28C1577A00B86424 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA23302328C1003F00B86424 /* ViewController.swift in Sources */,
+				FA23303628C1040000B86424 /* NetworkManager.swift in Sources */,
+				FA23302328C1003F00B86424 /* PostsViewController.swift in Sources */,
 				FA23301F28C1003F00B86424 /* AppDelegate.swift in Sources */,
 				FA23302128C1003F00B86424 /* SceneDelegate.swift in Sources */,
+				FA23303828C1299600B86424 /* Post.swift in Sources */,
+				FA23303B28C1577A00B86424 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
