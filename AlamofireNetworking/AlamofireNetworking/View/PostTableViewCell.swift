@@ -9,11 +9,19 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var postCellView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     
     func configure(_ post: Post) {
-        titleLabel.text = post.title.capitalized
-        bodyLabel.text = post.body
+        DispatchQueue.main.async {
+            self.postCellView.layer.cornerRadius = 10
+            self.postCellView.layer.borderWidth = 5
+            self.postCellView.layer.borderColor = UIColor.white.cgColor
+//            self.postCellView.layer.
+            
+            self.titleLabel.text = post.title.capitalized
+            self.bodyLabel.text = post.body
+        }
     }
 }

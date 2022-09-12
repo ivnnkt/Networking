@@ -18,6 +18,10 @@
 		FA23303828C1299600B86424 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23303728C1299500B86424 /* Post.swift */; };
 		FA23303B28C1577A00B86424 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23303928C1577A00B86424 /* PostTableViewCell.swift */; };
 		FA23303C28C1577A00B86424 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA23303A28C1577A00B86424 /* PostTableViewCell.xib */; };
+		FA23304028CFD2F100B86424 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23303F28CFD2F100B86424 /* User.swift */; };
+		FA23304228CFD46200B86424 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23304128CFD46200B86424 /* Comment.swift */; };
+		FA23304428CFD6A500B86424 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23304328CFD6A500B86424 /* Album.swift */; };
+		FA23304628CFD84E00B86424 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23304528CFD84E00B86424 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		FA23303728C1299500B86424 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FA23303928C1577A00B86424 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FA23303A28C1577A00B86424 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		FA23303F28CFD2F100B86424 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA23304128CFD46200B86424 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FA23304328CFD6A500B86424 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		FA23304528CFD84E00B86424 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				FA23303728C1299500B86424 /* Post.swift */,
+				FA23303F28CFD2F100B86424 /* User.swift */,
+				FA23304128CFD46200B86424 /* Comment.swift */,
+				FA23304328CFD6A500B86424 /* Album.swift */,
+				FA23304528CFD84E00B86424 /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,9 +240,13 @@
 				FA23303628C1040000B86424 /* NetworkManager.swift in Sources */,
 				FA23302328C1003F00B86424 /* PostsViewController.swift in Sources */,
 				FA23301F28C1003F00B86424 /* AppDelegate.swift in Sources */,
+				FA23304228CFD46200B86424 /* Comment.swift in Sources */,
+				FA23304628CFD84E00B86424 /* Photo.swift in Sources */,
 				FA23302128C1003F00B86424 /* SceneDelegate.swift in Sources */,
+				FA23304428CFD6A500B86424 /* Album.swift in Sources */,
 				FA23303828C1299600B86424 /* Post.swift in Sources */,
 				FA23303B28C1577A00B86424 /* PostTableViewCell.swift in Sources */,
+				FA23304028CFD2F100B86424 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

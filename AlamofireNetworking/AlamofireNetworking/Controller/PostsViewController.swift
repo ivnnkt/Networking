@@ -8,7 +8,7 @@
 import UIKit
 
 class PostsViewController: UIViewController {
-    
+
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -29,8 +29,8 @@ class PostsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
+        title = "Posts"
         networkManager.getAllPosts { [weak self] (posts) in
             DispatchQueue.main.async {
                 self?.posts = posts
@@ -38,6 +38,8 @@ class PostsViewController: UIViewController {
         }
     }
 }
+
+// MARK: - configure table -
 
 extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
     

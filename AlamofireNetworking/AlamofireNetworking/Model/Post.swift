@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Post
 class Post: Codable {
     var userId: Int
     var id: Int

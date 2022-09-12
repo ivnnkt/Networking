@@ -44,6 +44,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bodyLabel" destination="ggf-eB-xAC" id="Qiy-SQ-lif"/>
+                <outlet property="postCellView" destination="H2p-sc-9uM" id="rhI-tr-7lh"/>
                 <outlet property="titleLabel" destination="WdO-zP-MEO" id="YMT-UM-H1d"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="130.24553571428572"/>
